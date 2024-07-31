@@ -1,0 +1,18 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: dqj3oy3lj-java-springboot
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: dqj3oy3lj-java-springboot 
+  name: dqj3oy3lj-java-springboot
+spec:
+  port:
+    targetPort: 8081 
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: dqj3oy3lj-java-springboot
+    weight: 100 

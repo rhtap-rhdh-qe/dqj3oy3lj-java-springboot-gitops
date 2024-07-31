@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: dqj3oy3lj-java-springboot-gitops-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/dqj3oy3lj-java-springboot-gitops
